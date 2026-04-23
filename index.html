@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Support Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h2>Welcome to Student Support Hub</h2>
+        <p>Your guide for university, housing and career success.</p>
+        <button onclick="closePopup()">Enter</button>
+    </div>
+</div>
+
+<header>
+    <h1>Student Support Hub</h1>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="info.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" class="banner">
+
+<h2>About This Platform</h2>
+<p>
+This platform helps students make better decisions about education, accommodation and careers.
+</p>
+
+<div class="card">
+<h3>Choose a University</h3>
+<select id="uniSelect" onchange="showUni()">
+<option value="">Select</option>
+<option value="ulster">Ulster University</option>
+<option value="london">University of London</option>
+<option value="oxford">Oxford University</option>
+</select>
+<p id="uniResult"></p>
+</div>
+
+<div class="card">
+<h3>Find Housing</h3>
+<button onclick="showHousing()">View Options</button>
+<p id="housingResult"></p>
+</div>
+
+<div class="card">
+<h3>Find Jobs</h3>
+<button onclick="showJobs()">View Jobs</button>
+<p id="jobResult"></p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Student Support Hub</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
