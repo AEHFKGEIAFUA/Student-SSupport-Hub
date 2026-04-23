@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Contact & Registration</h1>
+</header>
+
+<section>
+
+<h2>Register</h2>
+
+<form onsubmit="return validateForm()">
+
+<label>Name</label>
+<input type="text" id="name" required onblur="capitalizeName()">
+
+<label>Email</label>
+<input type="text" id="email" required onblur="fixEmail()">
+
+<label>Phone</label>
+<input type="text" id="phone" required oninput="onlyNumbers()">
+
+<button type="submit">Submit</button>
+
+</form>
+
+<h2>Get in Touch</h2>
+
+<p>Email: <a href="mailto:naku@gmail.com">naku@gmail.com</a></p>
+
+<p>
+University:
+<a href="https://www.ulster.ac.uk" target="_blank">Visit Ulster University</a>
+</p>
+
+<h3>Our Location</h3>
+
+<iframe 
+src="https://www.google.com/maps?q=London&output=embed" 
+width="100%" 
+height="300" 
+style="border:0;">
+</iframe>
+
+</section>
+
+<footer>
+<p>© 2026 Student Support Hub</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
